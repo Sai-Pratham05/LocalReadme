@@ -1,6 +1,6 @@
 # 🤖 LocalReadme 📃
 
-[![Untitled-1-01-1.jpg](images/LocalReadme.png)](https://www.canva.com/design/DAGMJWsH3oU/T2K6IqT5827v-8ws_9sH6g/edit?utm_content=DAGMJWsH3oU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+[![Untitled-1-01-1.jpg](LocalReadme-production\images\LocalReadme.png)](https://www.canva.com/design/DAGMJWsH3oU/T2K6IqT5827v-8ws_9sH6g/edit?utm_content=DAGMJWsH3oU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
