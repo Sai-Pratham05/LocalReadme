@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-  "author": "Pradyumnajavalagi,saiprathamkh"
+  "author": "Pradyumnajavalagi,saiprathamkh",
   "license": "ISC",
   "dependencies": {
     "@google-ai/generativelanguage": "^1.1.0",
