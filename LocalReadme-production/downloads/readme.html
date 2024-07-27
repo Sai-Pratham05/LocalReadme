@@ -1,0 +1,88 @@
+<h1 id="here-your-text-title-nana-komatsu-swiper">here your text…## Title: Nana Komatsu Swiper</h1>
+<h2 id="description">Description:</h2>
+<p>This is a website were we can swipe the images of nana komatsu a japanese actress.</p>
+<h2 id="table-of-contents">Table of Contents</h2>
+<ul>
+<li><a href="#installation">Installation</a></li>
+<li><a href="#usage">Usage</a></li>
+<li><a href="#code">Code</a></li>
+<li><a href="#code-explanation">Code Explanation</a></li>
+<li><a href="#contributing">Contributing</a></li>
+<li><a href="#license">License</a></li>
+</ul>
+<h2 id="installation">Installation</h2>
+<p>To install this project, follow these steps:</p>
+<ol>
+<li>Clone the repository to your local machine.</li>
+<li>Install the dependencies by running <code>npm install</code>.</li>
+<li>Run the project by running <code>npm start</code>.</li>
+</ol>
+<h2 id="usage">Usage</h2>
+<p>To use this project, follow these steps:</p>
+<ol>
+<li>Open the project in your browser.</li>
+<li>Click on the images to swipe through them.</li>
+</ol>
+<h2 id="code">Code</h2>
+<pre><code class="html language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+  &lt;title&gt;Nana Komatsu Swiper&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;div class="container"&gt;
+    &lt;div class="gallery"&gt;
+      &lt;img src="images/nana-komatsu-1.jpg" class="gallery-img active"&gt;
+      &lt;img src="images/nana-komatsu-2.jpg" class="gallery-img"&gt;
+      &lt;img src="images/nana-komatsu-3.jpg" class="gallery-img"&gt;
+    &lt;/div&gt;
+    &lt;div class="controls"&gt;
+      &lt;button class="prev"&gt;Prev&lt;/button&gt;
+      &lt;button class="next"&gt;Next&lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+<pre><code class="js language-js">const prevBtn = document.querySelector('.prev');
+const nextBtn = document.querySelector('.next');
+const galleryImgs = document.querySelectorAll('.gallery-img');
+let currentlySelected = 0;
+
+prevBtn.addEventListener('click', function(){
+    //well come back to you
+    galleryImgs[currentlySelected].classList.remove("active");
+    currentlySelected--;
+    galleryImgs[currentlySelected].classList.add("active");
+    nextBtn.disabled = false;
+    if(currentlySelected===0){
+        prevBtn.disabled = true;//it means prev button is in grey in color
+    }
+
+});
+
+nextBtn.addEventListener('click',function(){
+   galleryImgs[currentlySelected].classList.remove("active");
+   currentlySelected++;
+   galleryImgs[currentlySelected].classList.add("active");
+   prevBtn.disabled = false;//when you move to next pic,the previous one should be blanked out isn't?//
+   if(galleryImgs.length === currentlySelected+1){
+    nextBtn.disabled = true;
+   }
+});</code></pre>
+<h2 id="code-explanation">Code Explanation</h2>
+<p>The code for this project is fairly simple. It consists of a few HTML elements, some JavaScript, and a CSS stylesheet.</p>
+<p>The HTML elements are used to create the layout of the website and to display the images. The JavaScript is used to control the swiping of the images and to disable the buttons when necessary. The CSS stylesheet is used to style the elements of the website.</p>
+<h2 id="contributing">Contributing</h2>
+<p>To contribute to this project, please follow these steps:</p>
+<ol>
+<li>Fork the repository to your own account.</li>
+<li>Create a new branch for your changes.</li>
+<li>Make your changes and commit them to your branch.</li>
+<li>Push your changes to your fork.</li>
+<li>Create a pull request to the original repository.</li>
+</ol>
+<h2 id="license">License</h2>
+<p>This project is licensed under the MIT License.</p>
+<h2 id="here-your-text-here-your-text-here-your-text">here your text…# here your text…### here your text…</h2>
