@@ -100,7 +100,7 @@ The README Generator is a platform that allows users to upload a single-file cod
 
 ## 🤝Support
 
-If you encounter any issues or have questions, please feel free to [create an issue](https://github.com/Gitax18/readme-ai-generator/issues) on the repository. We're here to help!
+If you encounter any issues or have questions, please feel free to [create an issue](https://github.com/Sai-Pratham05/LocalReadme/issues) on the repository. We're here to help!
 
 ## ✍️ Authors
 
@@ -111,6 +111,6 @@ If you encounter any issues or have questions, please feel free to [create an is
 
 - Pradyumna A Javalagi  -  
 
- [![GitHub-social](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/pradyumnajavalagi) [![LinkedIn-social](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/pradyumna-javalagi-205599251/)
+ [![GitHub-social](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/pradyumnajavalagi)[![LinkedIn-social](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/pradyumna-javalagi-205599251/)
 
 
