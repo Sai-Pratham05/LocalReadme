@@ -28,7 +28,6 @@ The README Generator is a platform that allows users to upload a single-file cod
   - [💻 Tech Stack](#-tech-stack)
   - [⚙️ Installation](#️-installation)
     - [In Your Local Machine](#in-your-local-machine)
-    - [In Your Virtual Machine (using Docker)](#in-your-virtual-machine-using-docker)
   - [🚀 Usage](#-usage)
     - [In your Local Machine](#in-your-local-machine-1)
   - [🔮 Features for next release.](#-features-for-next-release)
