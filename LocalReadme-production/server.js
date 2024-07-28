@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const path = require('path');
 
 // vars
-const PORT = 3333
+const PORT = 3000
 
 // routes
 const appRoutes = require('./routes/app')

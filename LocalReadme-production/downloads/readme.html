@@ -1,0 +1,115 @@
+<h1 id="nanako-komatsu-image-swiping-project">Nanako Komatsu Image Swiping Project</h1>
+<h2 id="description">Description</h2>
+<p>This project is a simple image swiping project using buttons. The project uses the images of Nanako Komatsu, a Japanese actress.</p>
+<h2 id="table-of-contents">Table of Contents</h2>
+<ul>
+<li><a href="#installation">Installation</a></li>
+<li><a href="#usage">Usage</a></li>
+<li><a href="#code">Code</a></li>
+<li><a href="#code-explanation">Code Explanation</a></li>
+<li><a href="#contributing">Contributing</a></li>
+<li><a href="#license">License</a></li>
+</ul>
+<h2 id="installation">Installation</h2>
+<p>To install the project, follow these steps:</p>
+<ol>
+<li>Clone the repository to your local machine.</li>
+<li>Install the dependencies by running the following command:</li>
+</ol>
+<pre><code class="code-boxes">npm install</code></pre>
+<ol start="3">
+<li>Run the project by running the following command:</li>
+</ol>
+<pre><code class="code-boxes">npm start</code></pre>
+<h2 id="usage">Usage</h2>
+<p>To use the project, open the browser to http://localhost:3000. You will see a page with three buttons: <code class="code-boxes">Prev</code>, <code class="code-boxes">Next</code>, and <code class="code-boxes">Close</code>.</p>
+<p>To swipe the images, click the <code class="code-boxes">Prev</code> or <code class="code-boxes">Next</code> button. The <code class="code-boxes">Close</code> button will close the page.</p>
+<h2 id="code">Code</h2>
+<p>The code for the project is located in the <code class="code-boxes">src</code> directory. The following code snippets are included in the project:</p>
+<pre><code class="html language-html code-boxes" style="width: 100%; white-space: pre-wrap;">&lt;!-- App.js --&gt;
+
+import React, { useState, useEffect } from "react";
+import "./App.css";
+
+const App = () =&gt; {
+  const [currentlySelected, setCurrentSelected] = useState(0);
+  const galleryImgs = document.querySelectorAll(".gallery-img");
+
+  useEffect(() =&gt; {
+    galleryImgs.forEach((img) =&gt; {
+      img.addEventListener("click", () =&gt; {
+        setCurrentSelected(img.dataset.index);
+      });
+    });
+  }, []);
+
+  return (
+    &lt;div className="App"&gt;
+      &lt;h1&gt;Nanako Komatsu Image Swiping Project&lt;/h1&gt;
+      &lt;div className="gallery"&gt;
+        {galleryImgs.map((img, i) =&gt; (
+          &lt;img
+            key={i}
+            className={
+              currentlySelected === i ? "active" : "inactive"
+            }
+            src={img.src}
+            data-index={i}
+          /&gt;
+        ))}
+      &lt;/div&gt;
+      &lt;div className="buttons"&gt;
+        &lt;button className="prev" disabled={currentlySelected === 0} onClick={() =&gt; setCurrentSelected(currentlySelected - 1)}&gt;
+          Prev
+        &lt;/button&gt;
+        &lt;button className="next" disabled={currentlySelected === galleryImgs.length - 1} onClick={() =&gt; setCurrentSelected(currentlySelected + 1)}&gt;
+          Next
+        &lt;/button&gt;
+        &lt;button className="close" onClick={() =&gt; window.close()}&gt;
+          Close
+        &lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  );
+};
+
+export default App;</code></pre>
+<pre><code class="css language-css code-boxes" style="width: 100%; white-space: pre-wrap;">/* App.css */
+
+.App {
+  text-align: center;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery-img {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+}
+
+.active {
+  border: 2px solid red;
+}</code></pre>
+<pre><code class="js language-js code-boxes" style="width: 100%; white-space: pre-wrap;">// index.js
+
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./App";
+
+ReactDOM.render(&lt;App /&gt;, document.getElementById("root"));</code></pre>
+<h2 id="code-explanation">Code Explanation</h2>
+<p>The code for the project is relatively simple. The <code class="code-boxes">App.js</code> file contains the main logic for the project. The <code class="code-boxes">useState</code> hook is used to store the currently selected image index. The <code class="code-boxes">galleryImgs</code> array contains all of the images in the gallery. The <code class="code-boxes">useEffect</code> hook is used to listen for clicks on the images and update the currently selected image index.</p>
+<p>The <code class="code-boxes">App.css</code> file contains the styles for the project. The <code class="code-boxes">gallery</code> and <code class="code-boxes">gallery-img</code> classes are used to style the gallery of images. The <code class="code-boxes">active</code> class is used to style the currently selected image.</p>
+<p>The <code class="code-boxes">index.js</code> file is used to render the <code class="code-boxes">App</code> component to the DOM.</p>
+<h2 id="contributing">Contributing</h2>
+<p>To contribute to the project, follow these steps:</p>
+<ol>
+<li>Fork the repository to your local machine.</li>
+<li>Create a new branch for your changes.</li>
+<li>Make your changes and commit them to y</li>
+</ol>
